@@ -10,6 +10,11 @@
     "format": "biome format --write"
   },
   "dependencies": {
+    "@heroui/react": "^2.8.6",
+    "@heroui/theme": "^2.4.24",
+    "@vercel/blob": "^2.0.0",
+    "clsx": "^2.1.1",
+    "framer-motion": "^12.23.26",
     "next": "16.0.10",
     "react": "19.2.1",
     "react-dom": "19.2.1"
