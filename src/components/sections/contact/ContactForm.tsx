@@ -12,6 +12,7 @@ import {
 	Checkbox,
 } from "@heroui/react";
 import { FadeIn } from "@/components/ui/FadeIn";
+import { submitContactForm } from "@/app/actions/contact";
 
 const PROJECT_TYPES = [
 	{ key: "demo", label: "Request a Demo" },
@@ -24,16 +25,34 @@ const PROJECT_TYPES = [
 export function ContactForm() {
 	const [isSubmitting, setIsSubmitting] = useState(false);
 	const [isSubmitted, setIsSubmitted] = useState(false);
+	const [error, setError] = useState<string | null>(null);
+	const [wantsDemo, setWantsDemo] = useState(false);
+	const [projectType, setProjectType] = useState<string>("");
 
 	const handleSubmit = async (e: React.FormEvent<HTMLFormElement>) => {
 		e.preventDefault();
 		setIsSubmitting(true);
+		setError(null);
 
-		// Simulate form submission
-		await new Promise((resolve) => setTimeout(resolve, 1000));
+		const formData = new FormData(e.currentTarget);
+
+		const result = await submitContactForm({
+			name: formData.get("name") as string,
+			email: formData.get("email") as string,
+			organization: formData.get("organization") as string || undefined,
+			phone: formData.get("phone") as string || undefined,
+			projectType: projectType || undefined,
+			message: formData.get("message") as string,
+			wantsDemo,
+		});
 
 		setIsSubmitting(false);
-		setIsSubmitted(true);
+
+		if (result.success) {
+			setIsSubmitted(true);
+		} else {
+			setError(result.error || "Something went wrong");
+		}
 	};
 
 	if (isSubmitted) {
@@ -78,8 +97,15 @@ export function ContactForm() {
 					</h2>
 
 					<form onSubmit={handleSubmit} className="space-y-6">
+						{error && (
+							<div className="p-4 bg-danger/10 border border-danger/20 rounded-lg text-danger text-sm">
+								{error}
+							</div>
+						)}
+
 						<div className="grid md:grid-cols-2 gap-6">
 							<Input
+								name="name"
 								label="Name"
 								placeholder="Your name"
 								variant="bordered"
@@ -90,6 +116,7 @@ export function ContactForm() {
 								}}
 							/>
 							<Input
+								name="email"
 								type="email"
 								label="Email"
 								placeholder="you@example.com"
@@ -104,6 +131,7 @@ export function ContactForm() {
 
 						<div className="grid md:grid-cols-2 gap-6">
 							<Input
+								name="organization"
 								label="Organization"
 								placeholder="City, department, or company"
 								variant="bordered"
@@ -113,6 +141,7 @@ export function ContactForm() {
 								}}
 							/>
 							<Input
+								name="phone"
 								type="tel"
 								label="Phone"
 								placeholder="+1 (555) 000-0000"
@@ -128,6 +157,8 @@ export function ContactForm() {
 							label="Project Type"
 							placeholder="Select an option"
 							variant="bordered"
+							selectedKeys={projectType ? [projectType] : []}
+							onSelectionChange={(keys) => setProjectType(Array.from(keys)[0] as string)}
 							classNames={{
 								trigger: "border-border hover:border-primary",
 							}}
@@ -138,6 +169,7 @@ export function ContactForm() {
 						</Select>
 
 						<Textarea
+							name="message"
 							label="Message"
 							placeholder="Tell us about your project or question..."
 							variant="bordered"
@@ -150,6 +182,8 @@ export function ContactForm() {
 						/>
 
 						<Checkbox
+							isSelected={wantsDemo}
+							onValueChange={setWantsDemo}
 							classNames={{
 								label: "text-foreground-secondary text-sm",
 							}}
