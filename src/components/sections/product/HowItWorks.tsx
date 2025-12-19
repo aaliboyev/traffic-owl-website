@@ -6,23 +6,23 @@ import type { IconName } from "@/components/icons";
 
 const STEPS = [
 	{
-		title: "Violation Detection",
-		description: "High-resolution cameras continuously monitor traffic. AI-powered video analytics detect violations in real-time, including speeding, red-light running, and more.",
+		title: "Dual Verification Detection",
+		description: "Radar measurement and video frame-by-frame analysis work simultaneously to detect 10+ violation types with industry-leading accuracy.",
 		icon: "camera" as IconName,
 	},
 	{
 		title: "AI Processing",
-		description: "On-device tensor processors analyze footage using neural networks trained on millions of traffic scenarios. License plates are recognized with 95%+ accuracy.",
+		description: "On-device tensor processors analyze footage using neural networks. License plates are recognized with 98% accuracy even in challenging conditions.",
 		icon: "chip" as IconName,
 	},
 	{
 		title: "Evidence Capture",
-		description: "Complete violation evidence packages are automatically generated, including timestamped images, video clips, and vehicle identification data.",
+		description: "Complete violation evidence packages are automatically generated with dual-verified data, timestamped images, video clips, and vehicle identification.",
 		icon: "database" as IconName,
 	},
 	{
-		title: "Data Transmission",
-		description: "Encrypted data is transmitted via 3G/4G or fiber optic networks to the central monitoring system for review and citation processing.",
+		title: "Owl Grid Transmission",
+		description: "Encrypted data syncs to the Owl Grid central platform via 3G/4G or fiber for citywide monitoring, analytics, and citation processing.",
 		icon: "server" as IconName,
 	},
 ];

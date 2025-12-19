@@ -14,37 +14,37 @@ import {
 
 const HARDWARE_FEATURES = [
 	{
-		title: "5MP Machine Vision Camera",
-		description: "Industrial-grade Basler camera with exceptional low-light performance and high-speed capture.",
+		title: "Dual Verification System",
+		description: "Industry-first radar measurement combined with video frame-by-frame analysis for superior speed enforcement accuracy.",
 		icon: CameraIcon,
 	},
 	{
-		title: "Sealed IP67 Housing",
-		description: "Fanless, dustproof, and waterproof design for maintenance-free outdoor operation.",
+		title: "Modular Configuration",
+		description: "Multiple measuring modules (Types 1-4), video modules (Types 1-3), and radar modules for tailored deployment.",
 		icon: ShieldIcon,
 	},
 	{
-		title: "Solar Power Ready",
-		description: "15W consumption enables deployment with solar panels or wind generators anywhere.",
+		title: "Flexible Deployment",
+		description: "Supports stationary, mobile, and portable configurations. 15W consumption enables solar-powered operation.",
 		icon: SunIcon,
 	},
 ];
 
 const SOFTWARE_FEATURES = [
 	{
+		title: "Owl Grid Platform",
+		description: "Unified central monitoring connecting all Falcon units with traffic flow analytics and citywide scalability.",
+		icon: ServerIcon,
+	},
+	{
 		title: "Neural Network AI",
-		description: "Tensor architecture processor for real-time AI inference and computer vision processing.",
+		description: "Tensor architecture processor for real-time AI inference detecting 10+ violation types simultaneously.",
 		icon: ChipIcon,
 	},
 	{
-		title: "On-Device Storage",
-		description: "180+ days of violation data storage with automatic management and backup.",
+		title: "Smart City Integration",
+		description: "REST API and cloud-based analytics with infrared, thermal imaging, RFID, and environmental sensor support.",
 		icon: DatabaseIcon,
-	},
-	{
-		title: "Cloud Integration",
-		description: "REST API for seamless integration with municipal systems and Safe City platforms.",
-		icon: ServerIcon,
 	},
 ];
 

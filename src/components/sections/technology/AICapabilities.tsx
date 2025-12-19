@@ -45,12 +45,12 @@ const AI_FEATURES = [
 ];
 
 const DETECTION_CAPABILITIES = [
-	{ label: "Speed Violations", accuracy: 98 },
-	{ label: "Red Light Running", accuracy: 97 },
-	{ label: "License Plate Recognition", accuracy: 95 },
-	{ label: "Pedestrian Detection", accuracy: 94 },
-	{ label: "Phone Use Detection", accuracy: 92 },
-	{ label: "Seatbelt Detection", accuracy: 91 },
+	{ label: "Speed Violations (Dual Verification)", accuracy: 98 },
+	{ label: "Red Light Running", accuracy: 98 },
+	{ label: "License Plate Recognition", accuracy: 98 },
+	{ label: "Failure to Yield", accuracy: 96 },
+	{ label: "Lane & Turn Violations", accuracy: 95 },
+	{ label: "Phone Use Detection", accuracy: 94 },
 ];
 
 export function AICapabilities() {

@@ -7,10 +7,10 @@ import { FadeIn } from "@/components/ui/FadeIn";
 import { ArrowRightIcon } from "@/components/icons";
 
 const SPEC_BADGES = [
-	{ label: "15W Power", color: "primary" as const },
-	{ label: "< 6kg Weight", color: "secondary" as const },
-	{ label: "95%+ Accuracy", color: "primary" as const },
-	{ label: "IP67 Rated", color: "secondary" as const },
+	{ label: "Dual Verification", color: "primary" as const },
+	{ label: "10+ Violation Types", color: "secondary" as const },
+	{ label: "24/7 Unattended", color: "primary" as const },
+	{ label: "Made in California", color: "secondary" as const },
 ];
 
 const VIDEO_URL = "https://frrygwgnwimju6id.public.blob.vercel-storage.com/traffic_owl_compressed.mp4";
@@ -38,9 +38,9 @@ export function ProductHero() {
 
 						<FadeIn delay={0.2}>
 							<p className="text-lg text-foreground-secondary mb-8">
-								Falcon is our flagship AI-powered traffic violation detection system.
-								Combining cutting-edge neural networks with industrial-grade hardware,
-								it delivers unmatched accuracy and reliability for municipal traffic enforcement.
+								Falcon is a multi-violation automated enforcement unit designed for 24/7 unattended operation.
+								Featuring industry-first dual verification—radar and video frame-by-frame analysis—it delivers
+								superior accuracy and evidentiary robustness. Available in stationary, mobile, and portable configurations.
 							</p>
 						</FadeIn>
 

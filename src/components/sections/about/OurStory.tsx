@@ -20,24 +20,25 @@ export function OurStory() {
 
 							<div className="space-y-4 text-foreground-secondary leading-relaxed">
 								<p>
-									Traffic Owl emerged from a recognition that traditional traffic
-									enforcement technology hadn't kept pace with advances in AI and
-									computer vision. We set out to build something better.
+									Traffic Owl emerged from a recognition that traditional enforcement
+									systems couldn't keep pace with modern city needs. Competitors offer
+									single-method detection and limited violation coverage—we built something better.
 								</p>
 								<p>
-									Our team combines expertise in machine learning, industrial hardware
-									design, and municipal technology deployment. We've worked with cities
-									across the country to understand their unique challenges and needs.
+									Our Falcon system introduces industry-first dual verification using
+									radar and video frame-by-frame analysis simultaneously, delivering
+									superior accuracy and evidentiary robustness. All equipment is locally
+									manufactured and serviced in California.
 								</p>
 								<p>
-									When Glendale announced its preparations for the 2028 Los Angeles
-									Olympics, we saw an opportunity to partner with a forward-thinking
-									city to showcase what modern traffic enforcement can achieve.
+									With the 2028 Los Angeles Olympics approaching, cities like Glendale
+									face Olympic-scale traffic pressure and global scrutiny. Traffic Owl
+									positions these cities for safer intersections and predictable traffic flow.
 								</p>
 								<p>
-									Today, Traffic Owl represents the cutting edge of traffic enforcement
-									technology: AI-powered, solar-ready, and built for the demands of
-									modern cities.
+									We're not just enforcement—we're smart-city infrastructure with
+									traffic analytics, ALPR, and scalable citywide deployment through
+									our unified Owl Grid platform.
 								</p>
 							</div>
 						</div>

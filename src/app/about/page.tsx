@@ -3,6 +3,8 @@ import {
 	AboutHero,
 	OurStory,
 	Values,
+	Compliance,
+	Olympics2028,
 	Partners,
 } from "@/components/sections/about";
 
@@ -17,7 +19,9 @@ export default function AboutPage() {
 		<>
 			<AboutHero />
 			<OurStory />
+			<Compliance />
 			<Values />
+			<Olympics2028 />
 			<Partners />
 		</>
 	);

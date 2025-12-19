@@ -1,5 +1,6 @@
 import Link from "next/link";
-import { LogoIcon, TwitterIcon, LinkedInIcon, MailIcon, PhoneIcon, MapPinIcon } from "@/components/icons";
+import Image from "next/image";
+import { TwitterIcon, LinkedInIcon, MailIcon, PhoneIcon, MapPinIcon } from "@/components/icons";
 import { SITE_CONFIG, FOOTER_LINKS, CONTACT_INFO } from "@/lib/constants";
 
 export function Footer() {
@@ -12,7 +13,13 @@ export function Footer() {
 					{/* Brand Column */}
 					<div className="lg:col-span-1">
 						<Link href="/" className="flex items-center gap-2 mb-4">
-							<LogoIcon className="h-8 w-8 text-primary" />
+							<Image
+								src="/img-removebg-preview.png"
+								alt="Traffic Owl Logo"
+								width={40}
+								height={60}
+								className="h-10 w-auto"
+							/>
 							<span className="text-xl font-bold text-foreground">
 								{SITE_CONFIG.name}
 							</span>

@@ -15,39 +15,39 @@ export const NAV_LINKS = [
 ];
 
 export const STATS = [
-	{ value: 95, suffix: "%+", label: "Detection Accuracy" },
+	{ value: 98, suffix: "%", label: "Detection Accuracy" },
 	{ value: 24, suffix: "/7", label: "Operation" },
+	{ value: 10, suffix: "+", label: "Violation Types" },
 	{ value: 15, suffix: "W", label: "Power Consumption" },
-	{ value: 6, suffix: "kg", label: "Lightweight Design" },
 ];
 
 export const FEATURES = [
 	{
-		id: "speed",
-		title: "Speed Enforcement",
+		id: "dual-verification",
+		title: "Dual Speed Verification",
 		description:
-			"Automated speed detection on highways and urban roads with invisible radar technology.",
+			"Industry-first dual verification using radar measurement and video frame-by-frame analysis simultaneously for superior accuracy.",
 		icon: "speed",
 	},
 	{
-		id: "redlight",
-		title: "Red-Light Cameras",
+		id: "multi-violation",
+		title: "Multi-Violation Detection",
 		description:
-			"24/7 intersection monitoring to prevent dangerous red-light violations.",
+			"Single system detects 10+ violation types: speeding, red-light, illegal turns, failure to yield, and more.",
 		icon: "traffic-light",
 	},
 	{
-		id: "pedestrian",
-		title: "Pedestrian Safety",
+		id: "flexible-deployment",
+		title: "Flexible Deployment",
 		description:
-			"Crosswalk protection ensuring drivers yield to pedestrians.",
+			"Modular design supports stationary, mobile, and portable configurations for any enforcement scenario.",
 		icon: "pedestrian",
 	},
 	{
-		id: "ai-detection",
-		title: "AI-Powered Detection",
+		id: "owl-grid",
+		title: "Owl Grid Platform",
 		description:
-			"Advanced neural networks detect seatbelt, phone use, and headlight violations.",
+			"Unified central platform connecting all units with traffic analytics and scalable citywide deployment.",
 		icon: "ai",
 	},
 ];
@@ -57,11 +57,11 @@ export const SOLUTIONS = [
 		id: "speed-enforcement",
 		title: "Speed Enforcement",
 		description:
-			"Automated speed monitoring for highways, urban roads, and school zones. Invisible to radar detectors with high accuracy license plate recognition.",
+			"Dual verification system using radar measurement and video frame-by-frame analysis simultaneously for superior accuracy and evidentiary robustness.",
 		benefits: [
-			"High-speed capture up to 255 km/h",
-			"Night vision capability",
-			"Wireless data transmission",
+			"Dual radar + video verification",
+			"24/7 unattended operation",
+			"Evidence-grade documentation",
 		],
 	},
 	{
@@ -70,20 +70,31 @@ export const SOLUTIONS = [
 		description:
 			"Intersection safety monitoring with automatic detection of red-light running and gridlock violations.",
 		benefits: [
-			"Multi-lane coverage (up to 4 lanes)",
+			"Multi-lane coverage",
 			"Traffic light phase integration",
 			"Automatic evidence capture",
 		],
 	},
 	{
 		id: "pedestrian",
-		title: "Pedestrian Crossing",
+		title: "Failure to Yield",
 		description:
-			"Crosswalk protection monitoring to ensure driver compliance and reduce pedestrian accidents.",
+			"Monitors crosswalks and intersections to detect vehicles failing to yield to pedestrians and other right-of-way violations.",
 		benefits: [
+			"Pedestrian right-of-way detection",
 			"High clarity night imaging",
 			"Evidence standards compliance",
-			"Reduced pedestrian incidents",
+		],
+	},
+	{
+		id: "lane-violations",
+		title: "Lane & Turn Violations",
+		description:
+			"Detects illegal turns, lane misuse, oncoming traffic violations, and improper overtaking maneuvers.",
+		benefits: [
+			"Illegal turn detection",
+			"Lane misuse monitoring",
+			"Overtaking violations",
 		],
 	},
 	{
@@ -92,98 +103,120 @@ export const SOLUTIONS = [
 		description:
 			"Ensures vehicles obey signals at railway crossings with on-site edge processing.",
 		benefits: [
-			"Traffic light phase detection",
+			"Signal phase detection",
 			"On-device processing",
 			"Real-time alerts",
 		],
 	},
 	{
-		id: "ai-detection",
-		title: "AI-Powered Detection",
+		id: "driver-behavior",
+		title: "Driver Behavior",
 		description:
-			"Next-generation neural network detection for driver behavior violations.",
-		subFeatures: [
-			{
-				name: "Seatbelt Compliance",
-				description: "Automatic detection of seatbelt non-use",
-			},
-			{
-				name: "Mobile Phone Use",
-				description: "Identifies drivers using phones while driving",
-			},
-			{
-				name: "Headlight Violations",
-				description: "Detects improper headlight usage",
-			},
-		],
+			"AI-powered detection of dangerous driver behaviors including distracted driving and safety violations.",
 		benefits: [
+			"Seatbelt compliance",
+			"Mobile phone detection",
 			"Real-time AI analysis",
-			"High accuracy recognition",
-			"Continuous learning algorithms",
 		],
 	},
 	{
-		id: "weight-control",
-		title: "Weight & Dimension Control",
+		id: "vehicle-compliance",
+		title: "Vehicle Compliance",
 		description:
-			"Weigh-in-motion enforcement for commercial vehicles to protect road infrastructure.",
+			"Automated verification of vehicle registration, insurance status, and detection of unauthorized equipment.",
 		benefits: [
-			"Capture at speeds up to 255 km/h",
-			"Low power consumption",
-			"Multi-lane coverage",
+			"Insurance verification",
+			"Unauthorized lights/sirens",
+			"Inspection compliance",
+		],
+	},
+	{
+		id: "traffic-analytics",
+		title: "Traffic Analytics",
+		description:
+			"Continuous traffic flow monitoring with automated ALPR and statistical analysis for city planning.",
+		benefits: [
+			"Automated ALPR",
+			"Flow monitoring",
+			"Statistical analysis",
 		],
 	},
 ];
 
 export const TECH_SPECS = {
 	hardware: [
-		{ label: "Power Consumption", value: "15W" },
-		{ label: "Weight", value: "< 6 kg" },
+		{ label: "Speed Detection", value: "Dual radar + video" },
+		{ label: "Deployment Modes", value: "Stationary/Mobile/Portable" },
 		{ label: "Camera Resolution", value: "5 MP" },
-		{ label: "Operating Temperature", value: "-40°C to +60°C" },
+		{ label: "Power Consumption", value: "15W" },
 		{ label: "Protection Rating", value: "IP67" },
-		{ label: "MTBF", value: "50,000 hours" },
+		{ label: "Manufacturing", value: "California, USA" },
 	],
 	software: [
-		{ label: "Operating System", value: "Linux-based" },
+		{ label: "Central Platform", value: "Owl Grid" },
 		{ label: "AI Processing", value: "Tensor architecture" },
 		{ label: "Data Storage", value: "180+ days on-device" },
 		{ label: "Connectivity", value: "3G/4G/Fiber" },
-		{ label: "Integration", value: "REST API" },
-		{ label: "Security", value: "End-to-end encryption" },
+		{ label: "Integration", value: "REST API / Cloud" },
+		{ label: "Violation Types", value: "10+ categories" },
 	],
 };
 
 export const VALUES = [
 	{
-		title: "Safety First",
+		title: "Vision Zero",
 		description:
-			"Our mission is to make roads safer for everyone - drivers, pedestrians, and communities.",
+			"Aligned with California's goal to eliminate traffic fatalities and serious injuries on our roads.",
 		icon: "shield",
 	},
 	{
-		title: "Innovation",
+		title: "Accuracy First",
 		description:
-			"Leveraging cutting-edge AI and machine vision to solve traffic enforcement challenges.",
-		icon: "lightbulb",
+			"Dual verification technology ensures superior evidentiary robustness compared to single-method systems.",
+		icon: "target",
 	},
 	{
-		title: "Reliability",
+		title: "Local Manufacturing",
 		description:
-			"Industrial-grade hardware designed for 24/7 operation in any weather condition.",
+			"All equipment manufactured and serviced in California for reliable procurement and faster support.",
 		icon: "check-circle",
 	},
 	{
-		title: "Community",
+		title: "Smart City Ready",
 		description:
-			"Working with cities and communities to create safer, more livable neighborhoods.",
-		icon: "users",
+			"Beyond enforcement—traffic analytics, ALPR, and infrastructure monitoring for modern cities.",
+		icon: "lightbulb",
+	},
+	{
+		title: "Broadest Coverage",
+		description:
+			"10+ violation types from a single system—the widest coverage among competitors in the market.",
+		icon: "camera",
+	},
+	{
+		title: "Modular Design",
+		description:
+			"Flexible configurations with multiple module types to tailor enforcement by intersection or zone.",
+		icon: "chip",
+	},
+	{
+		title: "24/7 Unattended",
+		description:
+			"Designed for continuous autonomous operation without manual intervention or oversight.",
+		icon: "clock",
+	},
+	{
+		title: "Scalable Platform",
+		description:
+			"Owl Grid enables seamless expansion from pilot deployments to full citywide infrastructure.",
+		icon: "server",
 	},
 ];
 
 export const CONTACT_INFO = {
-	email: "info@trafficowl.com",
-	phone: "+1 (818) 555-0123",
+	name: "Evgeny Shkadov",
+	email: "es@arevcap.com",
+	phone: "(818) 404-2100",
 	address: "Glendale, California",
 };
 

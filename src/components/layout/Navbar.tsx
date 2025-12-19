@@ -2,9 +2,10 @@
 
 import { useState, useEffect } from "react";
 import Link from "next/link";
+import Image from "next/image";
 import { usePathname } from "next/navigation";
 import { Button } from "@heroui/react";
-import { LogoIcon, MenuIcon, XIcon } from "@/components/icons";
+import { MenuIcon, XIcon } from "@/components/icons";
 import { NAV_LINKS, SITE_CONFIG } from "@/lib/constants";
 import { cn } from "@/lib/utils";
 
@@ -47,7 +48,13 @@ export function Navbar() {
 						href="/"
 						className="flex items-center gap-2 group"
 					>
-						<LogoIcon className="h-8 w-8 text-primary transition-transform group-hover:scale-110" />
+						<Image
+							src="/img-removebg-preview.png"
+							alt="Traffic Owl Logo"
+							width={48}
+							height={72}
+							className="h-12 w-auto transition-transform group-hover:scale-110"
+						/>
 						<span className="text-xl font-bold text-foreground">
 							{SITE_CONFIG.name}
 						</span>

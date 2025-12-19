@@ -7,33 +7,33 @@ import { SunIcon, BoltIcon, TargetIcon, ClockIcon, ShieldIcon, ChipIcon } from "
 
 const DIFFERENTIATORS = [
 	{
-		title: "Solar Powered",
-		description: "Ultra-low 15W consumption enables deployment anywhere without grid permits or infrastructure.",
-		icon: SunIcon,
-	},
-	{
-		title: "Rapid Installation",
-		description: "Under 6kg lightweight design allows quick mounting by a single person, no reinforcement needed.",
-		icon: BoltIcon,
-	},
-	{
-		title: "95%+ Accuracy",
-		description: "Advanced neural networks ensure high detection rates with minimal false positives.",
+		title: "Dual Verification",
+		description: "Industry-first radar + video frame-by-frame analysis for superior speed enforcement accuracy.",
 		icon: TargetIcon,
 	},
 	{
-		title: "24/7 Operation",
-		description: "Industrial-grade components rated for -40°C to +60°C with 50,000 hour MTBF.",
-		icon: ClockIcon,
-	},
-	{
-		title: "Secure by Design",
-		description: "Linux-based system with end-to-end encryption protects against cyber threats.",
+		title: "10+ Violation Types",
+		description: "Broadest coverage: speeding, red-light, illegal turns, failure to yield, and more from one system.",
 		icon: ShieldIcon,
 	},
 	{
-		title: "Edge AI Processing",
-		description: "On-device tensor processing eliminates latency and reduces bandwidth requirements.",
+		title: "Flexible Deployment",
+		description: "Modular design supports stationary, mobile, and portable configurations for any scenario.",
+		icon: BoltIcon,
+	},
+	{
+		title: "24/7 Unattended",
+		description: "Designed for continuous autonomous operation with 15W low-power consumption.",
+		icon: ClockIcon,
+	},
+	{
+		title: "Made in California",
+		description: "Locally manufactured and serviced for reliable procurement and faster support.",
+		icon: SunIcon,
+	},
+	{
+		title: "Owl Grid Platform",
+		description: "Unified central monitoring with traffic analytics and scalable citywide deployment.",
 		icon: ChipIcon,
 	},
 ];

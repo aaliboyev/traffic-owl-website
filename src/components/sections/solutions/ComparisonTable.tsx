@@ -7,14 +7,20 @@ import { FadeIn } from "@/components/ui/FadeIn";
 const COMPARISON_DATA = [
 	{
 		feature: "Detection Accuracy",
-		trafficOwl: "93-97%",
+		trafficOwl: "98%",
 		traditional: "75-85%",
 		highlight: true,
 	},
 	{
 		feature: "Violation Types Detected",
-		trafficOwl: "6+ types",
+		trafficOwl: "10+ types",
 		traditional: "1-2 types",
+		highlight: true,
+	},
+	{
+		feature: "Speed Verification",
+		trafficOwl: "Dual (radar + video)",
+		traditional: "Single method only",
 		highlight: true,
 	},
 	{

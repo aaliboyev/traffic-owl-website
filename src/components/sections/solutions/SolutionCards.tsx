@@ -17,9 +17,11 @@ const iconMap = {
 	"speed-enforcement": SpeedIcon,
 	"red-light": TrafficLightIcon,
 	pedestrian: PedestrianIcon,
+	"lane-violations": TrafficLightIcon,
 	railroad: RailroadIcon,
-	"ai-detection": AIIcon,
-	"weight-control": TruckIcon,
+	"driver-behavior": AIIcon,
+	"vehicle-compliance": TruckIcon,
+	"traffic-analytics": SpeedIcon,
 };
 
 export function SolutionCards() {

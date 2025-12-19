@@ -24,9 +24,9 @@ export function AboutHero() {
 
 					<FadeIn delay={0.2}>
 						<p className="text-lg text-foreground-secondary">
-							Traffic Owl was founded with a simple mission: use technology to save lives
-							on our roads. We're committed to building the most advanced, reliable
-							traffic enforcement systems in the world.
+							Traffic Owl is California's turnkey traffic enforcement partner, aligned with
+							Vision Zero objectives and the AB 645 automated enforcement pilot. We build
+							foundational urban enforcement infrastructure—not just cameras.
 						</p>
 					</FadeIn>
 				</div>

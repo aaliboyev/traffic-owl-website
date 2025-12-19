@@ -4,26 +4,26 @@
 @custom-variant dark (&:is(.dark *));
 
 :root {
-	/* Dark Tech Theme Colors */
-	--background: #0a0a0f;
-	--background-secondary: #12121a;
-	--surface: #1a1a2e;
-	--surface-hover: #252540;
+	/* Dark Warm Theme Colors */
+	--background: #0f0d0a;
+	--background-secondary: #171410;
+	--surface: #1f1a15;
+	--surface-hover: #2a2420;
 
-	/* Primary - Cyan/Tech Blue */
-	--primary: #00b4d8;
-	--primary-hover: #0096b4;
-	--primary-glow: rgba(0, 212, 255, 0.3);
+	/* Primary - Amber/Golden Yellow */
+	--primary: #f5a623;
+	--primary-hover: #e6951b;
+	--primary-glow: rgba(245, 166, 35, 0.3);
 
-	/* Secondary - Neon Green */
-	--secondary: #00ff88;
-	--secondary-hover: #00e67a;
-	--secondary-glow: rgba(0, 255, 136, 0.3);
+	/* Secondary - Reddish-Orange */
+	--secondary: #ff6b35;
+	--secondary-hover: #e55a2b;
+	--secondary-glow: rgba(255, 107, 53, 0.3);
 
 	/* Text Colors */
 	--foreground: #ffffff;
-	--foreground-secondary: #a0a0b0;
-	--foreground-muted: #6b6b80;
+	--foreground-secondary: #b0a090;
+	--foreground-muted: #7a7060;
 
 	/* Borders */
 	--border: rgba(255, 255, 255, 0.1);
@@ -278,7 +278,7 @@ body {
 
 /* Glass Effect */
 .glass {
-	background: rgba(26, 26, 46, 0.8);
+	background: rgba(31, 26, 21, 0.8);
 	backdrop-filter: blur(12px);
 	border: 1px solid var(--border);
 }
@@ -286,8 +286,8 @@ body {
 /* Hero Gradient Background */
 .hero-gradient {
 	background: radial-gradient(ellipse at top, var(--surface) 0%, var(--background) 50%),
-		radial-gradient(ellipse at bottom right, rgba(0, 212, 255, 0.1) 0%, transparent 50%),
-		radial-gradient(ellipse at bottom left, rgba(0, 255, 136, 0.1) 0%, transparent 50%);
+		radial-gradient(ellipse at bottom right, rgba(245, 166, 35, 0.1) 0%, transparent 50%),
+		radial-gradient(ellipse at bottom left, rgba(255, 107, 53, 0.1) 0%, transparent 50%);
 }
 
 /* Grid Pattern */
