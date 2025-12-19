@@ -1,7 +1,7 @@
 export { AboutHero } from "./AboutHero";
-export { OurStory } from "./OurStory";
-export { Values } from "./Values";
+export { CompetitiveAdvantage } from "./CompetitiveAdvantage";
 export { Compliance } from "./Compliance";
 export { Olympics2028 } from "./Olympics2028";
-export { CompetitiveAdvantage } from "./CompetitiveAdvantage";
+export { OurStory } from "./OurStory";
 export { Partners } from "./Partners";
+export { Values } from "./Values";

@@ -1,13 +1,13 @@
 import { createClient } from "@libsql/client";
 
 export const db = createClient({
-	url: process.env.TURSO_DATABASE_URL!,
-	authToken: process.env.TURSO_AUTH_TOKEN,
+  url: process.env.TURSO_DATABASE_URL!,
+  authToken: process.env.TURSO_AUTH_TOKEN,
 });
 
 // Initialize the contacts table
 export async function initDb() {
-	await db.execute(`
+  await db.execute(`
 		CREATE TABLE IF NOT EXISTS contacts (
 			id INTEGER PRIMARY KEY AUTOINCREMENT,
 			name TEXT NOT NULL,

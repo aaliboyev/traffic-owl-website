@@ -4,309 +4,329 @@
 @custom-variant dark (&:is(.dark *));
 
 :root {
-	/* Dark Warm Theme Colors */
-	--background: #0f0d0a;
-	--background-secondary: #171410;
-	--surface: #1f1a15;
-	--surface-hover: #2a2420;
+  /* Dark Warm Theme Colors */
+  --background: #0f0d0a;
+  --background-secondary: #171410;
+  --surface: #1f1a15;
+  --surface-hover: #2a2420;
 
-	/* Primary - Amber/Golden Yellow */
-	--primary: #f5a623;
-	--primary-hover: #e6951b;
-	--primary-glow: rgba(245, 166, 35, 0.3);
+  /* Primary - Amber/Golden Yellow */
+  --primary: #f5a623;
+  --primary-hover: #e6951b;
+  --primary-glow: rgba(245, 166, 35, 0.3);
 
-	/* Secondary - Reddish-Orange */
-	--secondary: #ff6b35;
-	--secondary-hover: #e55a2b;
-	--secondary-glow: rgba(255, 107, 53, 0.3);
+  /* Secondary - Reddish-Orange */
+  --secondary: #ff6b35;
+  --secondary-hover: #e55a2b;
+  --secondary-glow: rgba(255, 107, 53, 0.3);
 
-	/* Text Colors */
-	--foreground: #ffffff;
-	--foreground-secondary: #b0a090;
-	--foreground-muted: #7a7060;
+  /* Text Colors */
+  --foreground: #ffffff;
+  --foreground-secondary: #b0a090;
+  --foreground-muted: #7a7060;
 
-	/* Borders */
-	--border: rgba(255, 255, 255, 0.1);
-	--border-hover: rgba(255, 255, 255, 0.2);
+  /* Borders */
+  --border: rgba(255, 255, 255, 0.1);
+  --border-hover: rgba(255, 255, 255, 0.2);
 
-	/* Gradients */
-	--gradient-primary: linear-gradient(135deg, var(--primary) 0%, var(--secondary) 100%);
-	--gradient-surface: linear-gradient(180deg, var(--surface) 0%, var(--background) 100%);
+  /* Gradients */
+  --gradient-primary: linear-gradient(
+    135deg,
+    var(--primary) 0%,
+    var(--secondary) 100%
+  );
+  --gradient-surface: linear-gradient(
+    180deg,
+    var(--surface) 0%,
+    var(--background) 100%
+  );
 }
 
 @theme inline {
-	--color-background: var(--background);
-	--color-background-secondary: var(--background-secondary);
-	--color-surface: var(--surface);
-	--color-surface-hover: var(--surface-hover);
-	--color-primary: var(--primary);
-	--color-primary-hover: var(--primary-hover);
-	--color-secondary: var(--secondary);
-	--color-secondary-hover: var(--secondary-hover);
-	--color-foreground: var(--foreground);
-	--color-foreground-secondary: var(--foreground-secondary);
-	--color-foreground-muted: var(--foreground-muted);
-	--color-border: var(--border);
-	--color-border-hover: var(--border-hover);
-	--font-sans: var(--font-geist-sans);
-	--font-mono: var(--font-geist-mono);
+  --color-background: var(--background);
+  --color-background-secondary: var(--background-secondary);
+  --color-surface: var(--surface);
+  --color-surface-hover: var(--surface-hover);
+  --color-primary: var(--primary);
+  --color-primary-hover: var(--primary-hover);
+  --color-secondary: var(--secondary);
+  --color-secondary-hover: var(--secondary-hover);
+  --color-foreground: var(--foreground);
+  --color-foreground-secondary: var(--foreground-secondary);
+  --color-foreground-muted: var(--foreground-muted);
+  --color-border: var(--border);
+  --color-border-hover: var(--border-hover);
+  --font-sans: var(--font-geist-sans);
+  --font-mono: var(--font-geist-mono);
 }
 
 /* Base styles */
 body {
-	background: var(--background);
-	color: var(--foreground);
-	font-family: var(--font-sans), system-ui, sans-serif;
+  background: var(--background);
+  color: var(--foreground);
+  font-family: var(--font-sans), system-ui, sans-serif;
 }
 
 /* Container centering - using !important to override Tailwind defaults */
 .container {
-	width: 100% !important;
-	max-width: 1280px !important;
-	margin-left: auto !important;
-	margin-right: auto !important;
-	padding-left: 1rem !important;
-	padding-right: 1rem !important;
+  width: 100%;
+  max-width: 1280px;
+  margin-left: auto;
+  margin-right: auto;
+  padding-left: 1rem;
+  padding-right: 1rem;
 }
 
 @media (min-width: 640px) {
-	.container {
-		padding-left: 1.5rem !important;
-		padding-right: 1.5rem !important;
-	}
+  .container {
+    padding-left: 1.5rem;
+    padding-right: 1.5rem;
+  }
 }
 
 @media (min-width: 1024px) {
-	.container {
-		padding-left: 2rem !important;
-		padding-right: 2rem !important;
-	}
+  .container {
+    padding-left: 2rem;
+    padding-right: 2rem;
+  }
 }
 
 /* Selection */
 ::selection {
-	background: var(--primary);
-	color: var(--background);
+  background: var(--primary);
+  color: var(--background);
 }
 
 /* Scrollbar */
 ::-webkit-scrollbar {
-	width: 8px;
-	height: 8px;
+  width: 8px;
+  height: 8px;
 }
 
 ::-webkit-scrollbar-track {
-	background: var(--background);
+  background: var(--background);
 }
 
 ::-webkit-scrollbar-thumb {
-	background: var(--surface);
-	border-radius: 4px;
+  background: var(--surface);
+  border-radius: 4px;
 }
 
 ::-webkit-scrollbar-thumb:hover {
-	background: var(--surface-hover);
+  background: var(--surface-hover);
 }
 
 /* Animation Utilities */
 @keyframes fadeInUp {
-	from {
-		opacity: 0;
-		transform: translateY(20px);
-	}
-	to {
-		opacity: 1;
-		transform: translateY(0);
-	}
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
 }
 
 @keyframes fadeIn {
-	from {
-		opacity: 0;
-	}
-	to {
-		opacity: 1;
-	}
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
 }
 
 @keyframes slideInLeft {
-	from {
-		opacity: 0;
-		transform: translateX(-30px);
-	}
-	to {
-		opacity: 1;
-		transform: translateX(0);
-	}
+  from {
+    opacity: 0;
+    transform: translateX(-30px);
+  }
+  to {
+    opacity: 1;
+    transform: translateX(0);
+  }
 }
 
 @keyframes slideInRight {
-	from {
-		opacity: 0;
-		transform: translateX(30px);
-	}
-	to {
-		opacity: 1;
-		transform: translateX(0);
-	}
+  from {
+    opacity: 0;
+    transform: translateX(30px);
+  }
+  to {
+    opacity: 1;
+    transform: translateX(0);
+  }
 }
 
 @keyframes pulse-glow {
-	0%,
-	100% {
-		box-shadow: 0 0 20px var(--primary-glow);
-	}
-	50% {
-		box-shadow: 0 0 40px var(--primary-glow), 0 0 60px var(--primary-glow);
-	}
+  0%,
+  100% {
+    box-shadow: 0 0 20px var(--primary-glow);
+  }
+  50% {
+    box-shadow:
+      0 0 40px var(--primary-glow),
+      0 0 60px var(--primary-glow);
+  }
 }
 
 @keyframes gradient-shift {
-	0% {
-		background-position: 0% 50%;
-	}
-	50% {
-		background-position: 100% 50%;
-	}
-	100% {
-		background-position: 0% 50%;
-	}
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
 }
 
 @keyframes float {
-	0%,
-	100% {
-		transform: translateY(0);
-	}
-	50% {
-		transform: translateY(-10px);
-	}
+  0%,
+  100% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-10px);
+  }
 }
 
 @keyframes spin-slow {
-	from {
-		transform: rotate(0deg);
-	}
-	to {
-		transform: rotate(360deg);
-	}
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
 }
 
 /* Animation Classes */
 .animate-fade-in-up {
-	animation: fadeInUp 0.6s ease-out forwards;
+  animation: fadeInUp 0.6s ease-out forwards;
 }
 
 .animate-fade-in {
-	animation: fadeIn 0.6s ease-out forwards;
+  animation: fadeIn 0.6s ease-out forwards;
 }
 
 .animate-slide-in-left {
-	animation: slideInLeft 0.6s ease-out forwards;
+  animation: slideInLeft 0.6s ease-out forwards;
 }
 
 .animate-slide-in-right {
-	animation: slideInRight 0.6s ease-out forwards;
+  animation: slideInRight 0.6s ease-out forwards;
 }
 
 .animate-pulse-glow {
-	animation: pulse-glow 3s ease-in-out infinite;
+  animation: pulse-glow 3s ease-in-out infinite;
 }
 
 .animate-gradient {
-	background-size: 200% 200%;
-	animation: gradient-shift 8s ease infinite;
+  background-size: 200% 200%;
+  animation: gradient-shift 8s ease infinite;
 }
 
 .animate-float {
-	animation: float 6s ease-in-out infinite;
+  animation: float 6s ease-in-out infinite;
 }
 
 .animate-spin-slow {
-	animation: spin-slow 4s linear infinite;
+  animation: spin-slow 4s linear infinite;
 }
 
 /* Conic Gradient for Animated Border */
 .bg-gradient-conic {
-	background: conic-gradient(
-		from 0deg,
-		transparent 0deg,
-		var(--primary) 60deg,
-		var(--secondary) 120deg,
-		transparent 180deg,
-		transparent 360deg
-	);
+  background: conic-gradient(
+    from 0deg,
+    transparent 0deg,
+    var(--primary) 60deg,
+    var(--secondary) 120deg,
+    transparent 180deg,
+    transparent 360deg
+  );
 }
 
 /* Delay Utilities */
 .delay-100 {
-	animation-delay: 100ms;
+  animation-delay: 100ms;
 }
 
 .delay-200 {
-	animation-delay: 200ms;
+  animation-delay: 200ms;
 }
 
 .delay-300 {
-	animation-delay: 300ms;
+  animation-delay: 300ms;
 }
 
 .delay-400 {
-	animation-delay: 400ms;
+  animation-delay: 400ms;
 }
 
 .delay-500 {
-	animation-delay: 500ms;
+  animation-delay: 500ms;
 }
 
 /* Glow Effects */
 .glow-primary {
-	box-shadow: 0 0 20px var(--primary-glow);
+  box-shadow: 0 0 20px var(--primary-glow);
 }
 
 .glow-secondary {
-	box-shadow: 0 0 20px var(--secondary-glow);
+  box-shadow: 0 0 20px var(--secondary-glow);
 }
 
 /* Gradient Text */
 .gradient-text {
-	background: var(--gradient-primary);
-	-webkit-background-clip: text;
-	-webkit-text-fill-color: transparent;
-	background-clip: text;
+  background: var(--gradient-primary);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
 }
 
 /* Glass Effect */
 .glass {
-	background: rgba(31, 26, 21, 0.8);
-	backdrop-filter: blur(12px);
-	border: 1px solid var(--border);
+  background: rgba(31, 26, 21, 0.8);
+  backdrop-filter: blur(12px);
+  border: 1px solid var(--border);
 }
 
 /* Hero Gradient Background */
 .hero-gradient {
-	background: radial-gradient(ellipse at top, var(--surface) 0%, var(--background) 50%),
-		radial-gradient(ellipse at bottom right, rgba(245, 166, 35, 0.1) 0%, transparent 50%),
-		radial-gradient(ellipse at bottom left, rgba(255, 107, 53, 0.1) 0%, transparent 50%);
+  background:
+    radial-gradient(ellipse at top, var(--surface) 0%, var(--background) 50%),
+    radial-gradient(
+      ellipse at bottom right,
+      rgba(245, 166, 35, 0.1) 0%,
+      transparent 50%
+    ),
+    radial-gradient(
+      ellipse at bottom left,
+      rgba(255, 107, 53, 0.1) 0%,
+      transparent 50%
+    );
 }
 
 /* Grid Pattern */
 .grid-pattern {
-	background-image: linear-gradient(var(--border) 1px, transparent 1px),
-		linear-gradient(90deg, var(--border) 1px, transparent 1px);
-	background-size: 50px 50px;
+  background-image:
+    linear-gradient(var(--border) 1px, transparent 1px),
+    linear-gradient(90deg, var(--border) 1px, transparent 1px);
+  background-size: 50px 50px;
 }
 
 /* Intersection Observer Animation Classes */
 .reveal {
-	opacity: 0;
-	transform: translateY(20px);
-	transition:
-		opacity 0.6s ease-out,
-		transform 0.6s ease-out;
+  opacity: 0;
+  transform: translateY(20px);
+  transition:
+    opacity 0.6s ease-out,
+    transform 0.6s ease-out;
 }
 
 .reveal.visible {
-	opacity: 1;
-	transform: translateY(0);
+  opacity: 1;
+  transform: translateY(0);
 }

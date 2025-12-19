@@ -1,5 +1,5 @@
-export { ProductHero } from "./ProductHero";
-export { HowItWorks } from "./HowItWorks";
 export { FeaturesGrid } from "./FeaturesGrid";
-export { TechSpecs } from "./TechSpecs";
+export { HowItWorks } from "./HowItWorks";
 export { Integration } from "./Integration";
+export { ProductHero } from "./ProductHero";
+export { TechSpecs } from "./TechSpecs";

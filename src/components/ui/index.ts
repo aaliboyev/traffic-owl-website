@@ -1,10 +1,10 @@
+export { AnimatedCounter } from "./AnimatedCounter";
+export { FadeIn, StaggerContainer, StaggerItem } from "./FadeIn";
+export { FeatureCard } from "./FeatureCard";
 export { GradientBackground } from "./GradientBackground";
 export { SectionHeading } from "./SectionHeading";
-export { FeatureCard } from "./FeatureCard";
 export { SolutionCard } from "./SolutionCard";
 export { SpecTable } from "./SpecTable";
 export { Timeline } from "./Timeline";
-export { AnimatedCounter } from "./AnimatedCounter";
-export { FadeIn, StaggerContainer, StaggerItem } from "./FadeIn";
 export { VideoPlayer } from "./VideoPlayer";
 export { YouTubePlayer } from "./YouTubePlayer";

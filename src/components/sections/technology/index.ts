@@ -1,5 +1,5 @@
-export { TechHero } from "./TechHero";
 export { AICapabilities } from "./AICapabilities";
+export { Compliance } from "./Compliance";
 export { HardwareInnovation } from "./HardwareInnovation";
 export { SoftwarePlatform } from "./SoftwarePlatform";
-export { Compliance } from "./Compliance";
+export { TechHero } from "./TechHero";
